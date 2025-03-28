@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f7fa; /* Light gray-blue background */
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #1a73e8; /* Blue background for header and footer */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        .profile {
+            text-align: center;
+            margin: 40px 0;
+            background-color: #fff; /* White background for profile section */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        section {
+            padding: 20px;
+            background-color: #fff; /* White background for sections */
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #1a73e8;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #d32f2f;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #f4f7fa;
+        }
+
+        /* Scroll to Top Button */
+        #scrollToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            display: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        #scrollToTop:hover {
+            background-color: #0c56d6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <div class="container">
+        <section class="profile">
+          <img src="Photo.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h2>THREESHA S</h2>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a <b>Software Developer</b> with a strong foundation in designing, developing, and optimizing software solutions. My expertise spans multiple programming languages, frameworks, and development methodologies. I enjoy solving complex problems, writing clean and efficient code, and continuously learning new technologies to build innovative and high-performance applications.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>KONGU VELLALAR MATRIC HR.SEC.SCHOOL-HSC</strong></p>
+            <p><strong>KPR COLLEGE OF ARTS SCIENCE AND RESEARCH</strong><br>B.Sc Information Technology (Pursuing)</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>TEAMWORK</li>
+                <li>LEADERSHIP</li>
+                <li>PROBLEM SOLVING</li>
+                <li>CRITICAL THINKING</li>
+                <li>TYPEWRITING</li>
+            </ul>
+        </section>
+
+        <section id="languages">
+            <h2>Computer Languages</h2>
+            <ul>
+                <li>C PROGRAMMING</li>
+                <li>C++ PROGRAMMING</li>
+                <li>PYTHON PROGRAMMING</li>
+                <li>JAVA PROGRAMMING</li>
+                <li>JAVASCRIPT</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:23bit059@kprcas.ac.in">23bit059@kprcas.ac.in</a></p>
+                <p><strong>Phone:</strong> 9342930349</p>
+                <p><strong>Resume:</strong>
+                     <a href="Resume.pdf" target="_blank">View PDF</a> <!-- Update path if necessary -->
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 THREESHA S. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" onclick="scrollToTop()">Scroll to Top</button>
+
+    <script>
+        // Show the scroll to top button when the user scrolls down 100px
+        window.onscroll = function() {
+            let scrollButton = document.getElementById('scrollToTop');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollButton.style.display = 'block';
+            } else {
+                scrollButton.style.display = 'none';
+            }
+        };
+
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
